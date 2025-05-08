@@ -1,16 +1,22 @@
 {
     "name": "winnie/laravel-query-watcher",
-    "description": "Laravel query watcher for slow queries",
+    "description": "Query performance watcher for Laravel applications.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+    },
     "autoload": {
         "psr-4": {
-            "Winnie\\LaravelQueryWatcher\\": "src/"
+            "Winnie\\QueryWatcher\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "winnie"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Winnie\\QueryWatcher\\QueryWatcherServiceProvider"
+            ]
         }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+    }
 }
