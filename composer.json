@@ -1,0 +1,16 @@
+{
+    "name": "winnie/laravel-query-watcher",
+    "description": "Laravel query watcher for slow queries",
+    "autoload": {
+        "psr-4": {
+            "Winnie\\LaravelQueryWatcher\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "winnie"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
